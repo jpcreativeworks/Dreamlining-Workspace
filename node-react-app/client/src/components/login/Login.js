@@ -8,7 +8,7 @@ function Login() {
     const handleInputUpdate = (e) => {
         // Getting the value and name of the input which triggered the change
         const { target } = e;
-        const inputType = target.name;
+        const inputType = target.name; //name of the input field, it can be anything you want
         const inputValue = target.value;
     
         
@@ -33,8 +33,8 @@ function Login() {
           );
           return;
         }
-    
-        setPassword('')
+        //clears fields after an error
+        setPassword('');
         setEmail('');
         setErrorMessage('');
         alert(`Hello ${email}`);
